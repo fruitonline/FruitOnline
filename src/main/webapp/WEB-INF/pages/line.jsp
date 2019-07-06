@@ -4,17 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript"
-	src="js/jquery-1.11.3.js"></script>
-<script type="text/javascript"
-	src="js/echarts.min.js"></script>
-	<title>折线图例子</title>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<title>折线图例子</title>
 </head>
 <body>
-        <div id="mainChart" style="width: 600px;height:400px;">
-         	
-         </div>
-<script type="text/javascript">
+	<div id="mainChart" style="width: 600px; height: 400px;"></div>
+	<script type="text/javascript">
 	//使用ajax加载数据 
 	$.ajax({
 		method : 'post',

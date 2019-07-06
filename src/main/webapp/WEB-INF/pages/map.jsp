@@ -4,16 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript"
-	src="js/jquery-1.11.3.js"></script>
-<script type="text/javascript"
-	src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
 <script type="text/javascript"
 	src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
 <title>地图例子</title>
 </head>
 <body>
-	<div id="map" style="width: 600px;height:400px;"></div>
+	<div id="map" style="width: 600px; height: 400px;"></div>
 
 	<script type="text/javascript">
 		//使用ajax加载数据 
