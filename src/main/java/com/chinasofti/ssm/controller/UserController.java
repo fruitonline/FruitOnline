@@ -36,7 +36,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	//public static String usrname;
-	@RequestMapping(value="person/login",method=RequestMethod.GET)
+	@RequestMapping(value="login",method=RequestMethod.GET)
 	public String gotoLogin(Model model) {
 		//创建User对象
 		User user = new User();
@@ -46,7 +46,7 @@ public class UserController {
 		return "login";		
 	}
 
-	@RequestMapping(value="person/login",method=RequestMethod.POST)
+	@RequestMapping(value="login",method=RequestMethod.POST)
 	public ModelAndView login(@Valid User user,Errors errors,HttpServletRequest req) 
 			throws IOException
 	{
@@ -79,7 +79,7 @@ public class UserController {
 		return mv;	
 	}
 	
-	@RequestMapping(value="person/info",method=RequestMethod.POST)
+	@RequestMapping(value="info",method=RequestMethod.POST)
 	public ModelAndView info(@Valid User user,Errors errors,HttpServletRequest request,MultipartFile photo) 
 			throws IOException
 	{	
@@ -136,7 +136,7 @@ public class UserController {
 	}
 	
 	
-	@RequestMapping(value="person/changePSD",method=RequestMethod.POST)
+	@RequestMapping(value="changePSD",method=RequestMethod.POST)
 	public ModelAndView changePSD(@Valid User user,Errors errors,@RequestParam("new_password")String new_password,
 			@RequestParam("conf_password")String conf_password) 
 			throws IOException
@@ -187,7 +187,7 @@ public class UserController {
 	
 	
 
-	@RequestMapping(value="person/setQuestion",method=RequestMethod.POST)
+	@RequestMapping(value="setQuestion",method=RequestMethod.POST)
 	public ModelAndView setQuestion(User user) 
 			throws IOException
 	{	
@@ -208,7 +208,7 @@ public class UserController {
 	}
 	
 	
-	@RequestMapping(value="person/setAddress",method=RequestMethod.POST)
+	@RequestMapping(value="setAddress",method=RequestMethod.POST)
 	public ModelAndView setAddress(User user) 
 			throws IOException
 	{	

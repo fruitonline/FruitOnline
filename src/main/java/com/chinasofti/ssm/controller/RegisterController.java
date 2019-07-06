@@ -20,12 +20,12 @@ public class RegisterController {
 	@Autowired
 	UserService userService;
 	
-	@RequestMapping(value="person/register",method=RequestMethod.GET)
+	@RequestMapping(value="register",method=RequestMethod.GET)
 	public String gotoRegister() {
 		return "register";		
 	}
 	
-	@RequestMapping(value="person/register",method=RequestMethod.POST)
+	@RequestMapping(value="register",method=RequestMethod.POST)
 	public ModelAndView register(
 			@RequestParam("username") String username,
 			@RequestParam("password") String pwd,

@@ -16,33 +16,34 @@
     <div class="home-1" id="page">
       <nav id="menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-		  <li><a href="shop.html">Shop List</a></li>
-		  <li><a href="shop-detail.html">Shop Detail</a><li>
-		  <li><a href="wish-list.html">Wishlist</a></li>
-		  <li><a href="shop-cart.html">Shop Cart</a></li>
-		  <li><a href="check-out.html">Checkout</a></li>
-		  <li><a href="person/per_index.jsp">Center</a></li>
+          <li><a href="index">Home</a></li>
+		  <li><a href="shop">Shop List</a></li>
+		  <li><a href="detail">Shop Detail</a><li>
+		  <li><a href="wish-list">Wishlist</a></li>
+		  <li><a href="shop-cart">Shop Cart</a></li>
+		  <li><a href="check-out">Checkout</a></li>
+		  <li><a href="per_index">Center</a></li>
         </ul>
       </nav>
       <header class="header-style-1">
         <div class="container">
           <div class="row">
             <div class="header-1-inner">
-              <a class="brand-logo animsition-link" href="index.html">
-                <img class="img-responsive" src="images/logo.png" alt="" />
+              <a class="brand-logo animsition-link" href="index">
+                <img class="img-responsive" src="images/logo-web.png" alt="" />
               </a>
               <nav>
                 <ul class="menu hidden-xs">
-                  <li><a href="index.html">Home</a></li>
-				  <li><a href="shop.html">Shop List</a></li>
-				  <li><a href="shop-detail.html">Shop Detail</a><li>
-				  <li><a href="wish-list.html">Wishlist</a></li>
-				  <li><a href="shop-cart.html">Shop Cart</a></li>
-				  <li><a href="check-out.html">Checkout</a></li>
-				  <li><a href="person/per_index.jsp">Center</a></li>
+                  <li><a href="index">Home</a></li>
+				  <li><a href="shop">Shop List</a></li>
+				  <li><a href="detail">Shop Detail</a><li>
+				  <li><a href="wish-list">Wishlist</a></li>
+				  <li><a href="shop-cart">Shop Cart</a></li>
+				  <li><a href="check-out">Checkout</a></li>
+				  <li><a href="per_index">Center</a></li>
                 </ul>
               </nav>
+              
               <!-- 这里是搜索啊 -->>
                 <div class="widget widget-control-header widget-search-header">
                   <a class="control btn-open-search-form js-open-search-form-header" href="#">
@@ -52,24 +53,25 @@
                     <button class="btn-close-form-search-header js-close-search-form-header">
                       <span class="lnr lnr-cross"></span>
                     </button>
-                    <form>
+                    
+                    <form method="post" action="searchresult" enctype="multipart/form-data">
                     
                     <div class="header_search">
                     
-                      <input type="text" name="keyword" id="keyword" class="search" placeholder="Search" />
-                      <button class="search">
+                      <input type="text" name="keyword" class="search" placeholder="Search" />
+                      <button type="submit" class="search" >
                         <span class="lnr lnr-magnifier"></span>
                       </button>
-                       <div id="searchBox" >
-                    </div>
+                       
                     </div>
                       
                     </form>
                   </div>
                 </div>
                 <!-- 这里是搜索啊 -->>
+                
                 <div class="widget widget-control-header widget-shop-cart js-widget-shop-cart">
-                  <a class="control" href="shop-cart.html">
+                  <a class="control" href="shop-cart">
                     <p class="counter">0</p>
                     <span class="lnr lnr-cart"></span>
                   </a>
@@ -101,10 +103,10 @@
             <div class="product-category-grid-style-1">
               <div class="row">
                 <div class="col-sm-4">
-                  <a href="#">
+                  <a href="shop">
                     <figure class="product-category-item">
                       <div class="thumbnail">
-                        <img src="images/category-product/1.jpg" alt="" />
+                        <img src="images/category-product/1.jpg" alt="shop" />
                       </div>
                       <figcaption>
                         <h3>Vegetable</h3>
@@ -113,10 +115,10 @@
                   </a>
                 </div>
                 <div class="col-sm-4">
-                  <a href="#">
+                  <a href="shop">
                     <figure class="product-category-item">
                       <div class="thumbnail">
-                        <img src="images/category-product/2.jpg" alt="" />
+                        <img src="images/category-product/2.jpg" alt="shop" />
                       </div>
                       <figcaption>
                         <h3>Fruit</h3>
@@ -125,7 +127,7 @@
                   </a>
                 </div>
                 <div class="col-sm-4">
-                  <a href="#">
+                  <a href="shop">
                     <figure class="product-category-item">
                       <div class="thumbnail">
                         <img src="images/category-product/3.jpg" alt="" />
@@ -141,193 +143,7 @@
           </div>
         </div>
       </section>
-      <section class="boxed-sm">
-        <div class="container">
-          <div class="heading-wrapper text-center">
-            <h3 class="heading">Our Products</h3>
-          </div>
-          <div class="row">
-            <div class="row js-product-masonry-layout-1 product-masonry-layout-1">
-              <div class="grid-sizer"></div>
-              <figure class="item">
-                <div class="product product-style-2">
-                  <div class="img-wrapper">
-                    <a href="#">
-                      <img class="img-responsive" src="images/product/isotope-01.jpg" alt="product thumbnail" />
-                    </a>
-                    <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item">
-                        <a class="js-quick-view" href="#" type="button" data-toggle="modal" data-target="#quick-view-product">
-                          <span class="lnr lnr-eye"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-wish-list">
-                        <a class="js-wish-list js-notify-add-wish-list" href="#">
-                          <span class="lnr lnr-heart"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
-                        <a class="animate-icon-cart" href="#">
-                          <span class="lnr lnr-cart"></span>
-                        </a>
-                        <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
-                          <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <figcaption class="desc">
-                      <h3>
-                        <a class="product-name" href="#">Salad</a>
-                      </h3>
-                      <span class="price">$2.00</span>
-                    </figcaption>
-                  </div>
-                </div>
-              </figure>
-              <figure class="item item-size-2">
-                <div class="product product-style-2">
-                  <div class="img-wrapper">
-                    <a href="#">
-                      <img class="img-responsive" src="images/product/isotope-03.jpg" alt="product thumbnail" />
-                    </a>
-                    <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item">
-                        <a class="js-quick-view" href="#" type="button" data-toggle="modal" data-target="#quick-view-product">
-                          <span class="lnr lnr-eye"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-wish-list">
-                        <a class="js-wish-list js-notify-add-wish-list" href="#">
-                          <span class="lnr lnr-heart"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
-                        <a class="animate-icon-cart" href="#">
-                          <span class="lnr lnr-cart"></span>
-                        </a>
-                        <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
-                          <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <figcaption class="desc">
-                      <h3>
-                        <a class="product-name" href="#">Bean</a>
-                      </h3>
-                      <span class="price">$3.20</span>
-                    </figcaption>
-                  </div>
-                </div>
-              </figure>
-              <figure class="item">
-                <div class="product product-style-2">
-                  <div class="img-wrapper">
-                    <a href="#">
-                      <img class="img-responsive" src="images/product/isotope-02.jpg" alt="product thumbnail" />
-                    </a>
-                    <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item">
-                        <a class="js-quick-view" href="#" type="button" data-toggle="modal" data-target="#quick-view-product">
-                          <span class="lnr lnr-eye"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-wish-list">
-                        <a class="js-wish-list js-notify-add-wish-list" href="#">
-                          <span class="lnr lnr-heart"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
-                        <a class="animate-icon-cart" href="#">
-                          <span class="lnr lnr-cart"></span>
-                        </a>
-                        <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
-                          <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <figcaption class="desc">
-                      <h3>
-                        <a class="product-name" href="#">Spinach</a>
-                      </h3>
-                      <span class="price">$3.10</span>
-                    </figcaption>
-                  </div>
-                </div>
-              </figure>
-              <figure class="item">
-                <div class="product product-style-2">
-                  <div class="img-wrapper">
-                    <a href="#">
-                      <img class="img-responsive" src="images/product/isotope-04.jpg" alt="product thumbnail" />
-                    </a>
-                    <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item">
-                        <a class="js-quick-view" href="#" type="button" data-toggle="modal" data-target="#quick-view-product">
-                          <span class="lnr lnr-eye"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-wish-list">
-                        <a class="js-wish-list js-notify-add-wish-list" href="#">
-                          <span class="lnr lnr-heart"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
-                        <a class="animate-icon-cart" href="#">
-                          <span class="lnr lnr-cart"></span>
-                        </a>
-                        <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
-                          <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <figcaption class="desc">
-                      <h3>
-                        <a class="product-name" href="#">Lemon</a>
-                      </h3>
-                      <span class="price">$1.10</span>
-                    </figcaption>
-                  </div>
-                </div>
-              </figure>
-              <figure class="item">
-                <div class="product product-style-2">
-                  <div class="img-wrapper">
-                    <a href="#">
-                      <img class="img-responsive" src="images/product/isotope-05.jpg" alt="product thumbnail" />
-                    </a>
-                    <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item">
-                        <a class="js-quick-view" href="#" type="button" data-toggle="modal" data-target="#quick-view-product">
-                          <span class="lnr lnr-eye"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-wish-list">
-                        <a class="js-wish-list js-notify-add-wish-list" href="#">
-                          <span class="lnr lnr-heart"></span>
-                        </a>
-                      </div>
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
-                        <a class="animate-icon-cart" href="#">
-                          <span class="lnr lnr-cart"></span>
-                        </a>
-                        <svg x="0px" y="0px" width="36px" height="32px" viewbox="0 0 36 32">
-                          <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <figcaption class="desc">
-                      <h3>
-                        <a class="product-name" href="#">Onion</a>
-                      </h3>
-                      <span class="price">$2.00 </span>
-                    </figcaption>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <div class="call-to-action-style-1">
         <img class="rellax bg-overlay" src="images/call-to-action/1.jpg" alt="" />
         <div class="overlay-call-to-action"></div>
@@ -335,7 +151,7 @@
           <div class="row">
             <p class="h3">Organic Food</p>
             <h2>Healthy - Fresh - Delicious.</h2>
-            <a class="btn btn-brand pill" href="#">VIEW MORE </a>
+            <a class="btn btn-brand pill" href="shop">VIEW MORE </a>
           </div>
         </div>
       </div>

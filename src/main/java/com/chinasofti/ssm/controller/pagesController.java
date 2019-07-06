@@ -26,14 +26,14 @@ public class pagesController {
 	@Autowired
 	UserService userService;
 
-	@RequestMapping(value = "person/ To_per_index", method = RequestMethod.GET)
+	@RequestMapping(value = "To_per_index", method = RequestMethod.GET)
 	public String to_per_index(User user, Model model) {
 
 		return "per_index";
 
 	}
 
-	@RequestMapping(value = "person/To_information", method = RequestMethod.GET)
+	@RequestMapping(value = "To_information", method = RequestMethod.GET)
 	public String to_information(User user,HttpServletRequest req, Model model) throws IOException {
 		// 首先要对数据库做一次查询 才跳转到info
 		//User user = userService.selectInfoByUser((User) req.getSession().getAttribute("user"));
@@ -44,31 +44,45 @@ public class pagesController {
 
 	}
 
-	@RequestMapping(value = "person/To_safety", method = RequestMethod.GET)
+	@RequestMapping(value = "To_safety", method = RequestMethod.GET)
 	public String to_safety(User user, Model model) {
 
 		return "safety";
 
 	}
 
-	@RequestMapping(value = "person/To_password", method = RequestMethod.GET)
+	@RequestMapping(value = "To_password", method = RequestMethod.GET)
 	public String to_password(User user, Model model) {
 
 		return "password";
 
 	}
 
-	@RequestMapping(value = "person/To_question", method = RequestMethod.GET)
+	@RequestMapping(value = "To_question", method = RequestMethod.GET)
 	public String to_question(User user, Model model) {
 
 		return "question";
 
 	}
 
-	@RequestMapping(value = "person/To_address", method = RequestMethod.GET)
+	@RequestMapping(value = "To_address", method = RequestMethod.GET)
 	public String to_address(User user, Model model) {
 
 		return "address";
+
+	}
+	
+	@RequestMapping(value = "comment", method = RequestMethod.GET)
+	public String to_comment(User user, Model model) {
+
+		return "comment";
+
+	}
+	
+	@RequestMapping(value = "order", method = RequestMethod.GET)
+	public String to_order(User user, Model model) {
+
+		return "order";
 
 	}
 
