@@ -108,13 +108,17 @@
                       <img class="img-responsive" src="${product.pro_image}" alt="product thumbnail" />
                     </a>
                     <div class="product-control-wrapper bottom-right">
-                      <div class="wrapper-control-item item-wish-list js-notify-add-wish-list">
+                      <div class="wrapper-control-item">
+                        <a  href="searchDetail?pro_image=${product.pro_image}&pro_info=${product.pro_info}&pro_price=${product.pro_price}" type="button">
+                          <span class="lnr lnr-eye"></span>
+                        </a>
+                      </div>
+                      <div class="wrapper-control-item item-wish-list">
                         <a href="#" onclick="AddToWish('${product.pro_info}')">
                           <span class="lnr lnr-heart"></span>
                         </a>
                       </div>
-                      
-                      <div class="wrapper-control-item item-add-cart js-action-add-cart">
+                     <div class="wrapper-control-item item-add-cart js-action-add-cart">
                         <a class="animate-icon-cart" href="#" onclick="AddToCart('${product.pro_info}')">
                           <span class="lnr lnr-cart"></span>
                         </a>
@@ -122,17 +126,18 @@
                           <path stroke-dasharray="19.79 19.79" fill="none" ,="," stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"></path>
                         </svg>
                       </div>
-                      
                     </div>
                   </div>
                   <figcaption class="desc text-center">
                     <h3>
                       <a class="product-name" href="#">${product.pro_info}</a>
                     </h3>
-                    <span class="price">¥${product.pro_price}</span>
+                    <span class="price">${product.pro_price}</span>
                   </figcaption>
                 </div>
               </figure>
+              
+              
               </c:forEach>
               </c:if>
              
