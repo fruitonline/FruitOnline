@@ -148,6 +148,8 @@
                   </figcaption>
                 </div>
               </figure>
+              
+              
               </c:forEach>
               </c:if>  
                          

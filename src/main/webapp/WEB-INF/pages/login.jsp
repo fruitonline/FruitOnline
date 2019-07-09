@@ -22,12 +22,12 @@
 	<body>
 
 		<div class="login-boxtitle">
-			<a href="home"><img alt="logo" src="images/logo-web.png" /></a>
+			<a href="index"><img alt="logo" src="images/logo-web.png" /></a>
 		</div>
 
 		<div class="login-banner">
 			<div class="login-main">
-				<div class="login-banner-bg"><span></span><img class="banner" src="images/769/big.jpg"></div>
+				<div class="login-banner-bg"><span></span><img class="banner" src="images/big.jpg"></div>
 				<div class="login-box">
 
 							<h3 class="title">Login Shop</h3>
